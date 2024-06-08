@@ -11,6 +11,8 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("Raemon");
 
     QGuiApplication app(argc, argv);
+    const QUrl style(QStringLiteral("qrc:/Style.qml"));
+    qmlRegisterSingletonType(style, "Style", 1, 0, "Style");
 
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("qrc:/main.qml"));

@@ -39,12 +39,7 @@ ApplicationWindow {
     Component {
         id: mainScreenPage
         MainPage {
-            MouseArea{
-                anchors.fill: parent
-                onDoubleClicked: {
-                    splashTimerOff.start()
-                }
-            }
+            //splashTimerOff.start()
         }
     }
 

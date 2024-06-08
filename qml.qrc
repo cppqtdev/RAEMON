@@ -3,5 +3,17 @@
         <file>main.qml</file>
         <file>SplashScreens.qml</file>
         <file>MainPage.qml</file>
+        <file>assets/icons/Car Settings Icon.svg</file>
+        <file>assets/icons/Climate Control Icon.svg</file>
+        <file>assets/icons/Home Icon.svg</file>
+        <file>assets/icons/Media Icon.svg</file>
+        <file>assets/icons/Navigation Icon.svg</file>
+        <file>controls/HomeButton.qml</file>
+        <file>screens/HomeScreen.qml</file>
+        <file>screens/CarScreen.qml</file>
+        <file>screens/NavigationScreen.qml</file>
+        <file>screens/ThermoScreen.qml</file>
+        <file>screens/MusicScreen.qml</file>
+        <file>Style.qml</file>
     </qresource>
 </RCC>
