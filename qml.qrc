@@ -38,5 +38,21 @@
         <file>assets/icons/mage--previous-fill.svg</file>
         <file>assets/icons/mingcute--shuffle-2-fill.svg</file>
         <file>assets/icons/mi--repeat.svg</file>
+        <file>assets/icons/Back Arrow.svg</file>
+        <file>assets/icons/Front Arrow.svg</file>
+        <file>assets/icons/music-backword.svg</file>
+        <file>assets/icons/music-forword.svg</file>
+        <file>assets/icons/Volume Icon.svg</file>
+        <file>Components/MediaControlFile.qml</file>
+        <file>assets/icons/Bluetooth Icon.svg</file>
+        <file>Components/MusicListTile.qml</file>
+        <file>assets/music-dummy-icons/Song 1.png</file>
+        <file>assets/music-dummy-icons/Song 2.png</file>
+        <file>assets/music-dummy-icons/Song 3.png</file>
+        <file>assets/music-dummy-icons/Song 4.png</file>
+        <file>assets/music-dummy-icons/Song 5.png</file>
+        <file>assets/music-dummy-icons/Song 6.png</file>
+        <file>Components/LargeTileMusic.qml</file>
+        <file>assets/icons/Skip Track Button.svg</file>
     </qresource>
 </RCC>

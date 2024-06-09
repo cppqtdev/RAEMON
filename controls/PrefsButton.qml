@@ -8,6 +8,7 @@ Button {
     property bool isGlow: false
     property real radius: implicitHeight/2
     property color iconColor: "#FFFFFF"
+    property color backgroundColor: "#252525"
 
     id: control
     implicitHeight: 40
@@ -34,7 +35,7 @@ Button {
     background: Rectangle {
         anchors.fill: parent
         radius: control.radius
-        color: "#252525"
+        color: control.backgroundColor
         visible: true
         border.color: control.checked ? "#FFFFFF" : "#00000000"
         border.width: 4

@@ -23,19 +23,10 @@ Item {
             Layout.column: 0
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 560
-                Layout.preferredHeight: 415
-                radius: 15
-            }
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 561
-                Layout.preferredHeight: 270
-                radius: 15
-            }
+            LargeTileMusic {}
+
+            MusicListTile {}
         }
 
         ColumnLayout {
@@ -49,12 +40,7 @@ Item {
 
             BatteryTile {}
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
-            }
+            MediaControlFile {}
         }
     }
 }

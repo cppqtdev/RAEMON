@@ -50,7 +50,7 @@ Rectangle {
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 text: qsTr("00:00")
                 font.pixelSize: 14
-                font.weight: Font.Bold
+                font.weight: Font.Light
                 font.family: "Lato"
                 color: "#FFFFFF"
             }
@@ -67,7 +67,7 @@ Rectangle {
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                 text: qsTr("03:55")
                 font.pixelSize: 14
-                font.weight: Font.Bold
+                font.weight: Font.Light
                 font.family: "Lato"
                 color: "#FFFFFF"
             }
