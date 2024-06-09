@@ -23,36 +23,31 @@ Item {
             Layout.column: 0
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 415
-                radius: 15
-            }
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
+
+            WeatherTile {}
+
+            SeatTile {
+                title: qsTr("Driver’s Seat")
+                temperature: 70
+                heatSeatChecked: false
+                fanSeatChecked: true
             }
         }
+
         ColumnLayout {
             spacing: 20
             Layout.row: 0
             Layout.column: 1
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 415
-                radius: 15
-            }
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
+
+            AirControlTile {}
+
+            SeatTile {
+                title: qsTr("Back Seat")
+                temperature: 68
+                heatSeatChecked: true
+                fanSeatChecked: false
             }
         }
         ColumnLayout {
@@ -66,11 +61,11 @@ Item {
 
             BatteryTile {}
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
+            SeatTile {
+                title: qsTr("Passenger Seat")
+                temperature: 73
+                heatSeatChecked: true
+                fanSeatChecked: true
             }
         }
     }

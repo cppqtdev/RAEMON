@@ -5,6 +5,7 @@ import Qt5Compat.GraphicalEffects
 
 Button {
     property string setIcon : ""
+    property string setText : ""
     property bool isGlow: false
     property real radius: implicitHeight/2
     property color iconColor: "#FFFFFF"
@@ -25,6 +26,16 @@ Button {
         Behavior on scale { NumberAnimation { duration: 200; } }
     }
 
+    Text {
+        z: 1
+        anchors.centerIn: parent
+        text: setText
+        font: control.font
+        color: iconColor
+        scale: control.pressed ? 0.9 : 1.0
+        Behavior on scale { NumberAnimation { duration: 200; } }
+    }
+
     ColorOverlay {
         z:1
         anchors.fill: imageIcon
@@ -37,8 +48,7 @@ Button {
         radius: control.radius
         color: control.backgroundColor
         visible: true
-        border.color: control.checked ? "#FFFFFF" : "#00000000"
-        border.width: 4
+
         Behavior on color {
             ColorAnimation {
                 duration: 200;

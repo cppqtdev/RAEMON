@@ -54,5 +54,15 @@
         <file>assets/music-dummy-icons/Song 6.png</file>
         <file>Components/LargeTileMusic.qml</file>
         <file>assets/icons/Skip Track Button.svg</file>
+        <file>assets/icons/Air Back Window.svg</file>
+        <file>assets/icons/Air Down.svg</file>
+        <file>assets/icons/Air Up.svg</file>
+        <file>assets/icons/Air Windshield.svg</file>
+        <file>assets/icons/Down.svg</file>
+        <file>assets/icons/Fan Icon.svg</file>
+        <file>assets/icons/Heat Seats.svg</file>
+        <file>Components/SeatTile.qml</file>
+        <file>Components/WeatherTile.qml</file>
+        <file>Components/AirControlTile.qml</file>
     </qresource>
 </RCC>
