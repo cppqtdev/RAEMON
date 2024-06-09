@@ -30,12 +30,7 @@ Item {
                 radius: 15
             }
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 561
-                Layout.preferredHeight: 270
-                radius: 15
-            }
+            KeyBoardTile {}
         }
 
         ColumnLayout {

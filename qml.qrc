@@ -64,5 +64,6 @@
         <file>Components/SeatTile.qml</file>
         <file>Components/WeatherTile.qml</file>
         <file>Components/AirControlTile.qml</file>
+        <file>Components/KeyBoardTile.qml</file>
     </qresource>
 </RCC>

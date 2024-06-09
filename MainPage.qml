@@ -5,6 +5,7 @@ import "controls"
 import "screens"
 
 Item {
+    id: root
     anchors.fill: parent
     RowLayout {
         anchors.fill: parent
