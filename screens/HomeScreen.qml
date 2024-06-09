@@ -18,15 +18,22 @@ Item {
         rowSpacing: 20
         columnSpacing: 20
 
-        Rectangle {
-            color: "#151515"
-            Layout.preferredWidth: 560
-            Layout.preferredHeight: 415
+        // Rectangle {
+        //     color: "#151515"
+        //     Layout.preferredWidth: 560
+        //     Layout.preferredHeight: 415
+        //     Layout.columnSpan: 2
+        //     Layout.rowSpan: 1
+        //     Layout.row: 0
+        //     Layout.column: 0
+        //     radius: 15
+        // }
+
+        CameraView {
             Layout.columnSpan: 2
             Layout.rowSpan: 1
             Layout.row: 0
             Layout.column: 0
-            radius: 15
         }
 
         ColumnLayout {
@@ -49,19 +56,10 @@ Item {
             Layout.rowSpan: 1
             Layout.row: 1
             Layout.column: 0
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
-            }
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
-            }
+            CliemateSmallTile {}
+
+            MusicSmallTile {}
         }
 
         NotificationTile {

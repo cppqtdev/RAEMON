@@ -24,5 +24,19 @@
         <file>assets/icons/Eco Leaf Icon.svg</file>
         <file>Components/NotificationTile.qml</file>
         <file>assets/icons/Tire Pressure Icon.svg</file>
+        <file>Components/CameraView.qml</file>
+        <file>Components/CliemateSmallTile.qml</file>
+        <file>Components/MusicSmallTile.qml</file>
+        <file>assets/icons/logos--spotify-icon.svg</file>
+        <file>controls/PrefsButton.qml</file>
+        <file>assets/fontawesome/fontawesome.otf</file>
+        <file>assets/icons/jam--repeat.svg</file>
+        <file>assets/icons/lucide--repeat-1.svg</file>
+        <file>assets/icons/mage--next-fill.svg</file>
+        <file>assets/icons/mage--pause-fill.svg</file>
+        <file>assets/icons/mage--play-fill.svg</file>
+        <file>assets/icons/mage--previous-fill.svg</file>
+        <file>assets/icons/mingcute--shuffle-2-fill.svg</file>
+        <file>assets/icons/mi--repeat.svg</file>
     </qresource>
 </RCC>

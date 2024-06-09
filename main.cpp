@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("Raemon");
 
     QGuiApplication app(argc, argv);
+
     app.setWindowIcon(QIcon("qrc:/assets/techcoderhub_logo.jpg"));
     const QUrl style(QStringLiteral("qrc:/Style.qml"));
     qmlRegisterSingletonType(style, "Style", 1, 0, "Style");
