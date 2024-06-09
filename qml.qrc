@@ -15,5 +15,14 @@
         <file>screens/ThermoScreen.qml</file>
         <file>screens/MusicScreen.qml</file>
         <file>Style.qml</file>
+        <file>assets/techcoderhub_logo.jpg</file>
+        <file>Components/DateTimeTile.qml</file>
+        <file>assets/icons/BatteryIcon.svg</file>
+        <file>assets/icons/BatteryIcon-2.svg</file>
+        <file>assets/icons/Cloud Icon.svg</file>
+        <file>Components/BatteryTile.qml</file>
+        <file>assets/icons/Eco Leaf Icon.svg</file>
+        <file>Components/NotificationTile.qml</file>
+        <file>assets/icons/Tire Pressure Icon.svg</file>
     </qresource>
 </RCC>

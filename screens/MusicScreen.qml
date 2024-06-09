@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls.Basic
 import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects
+import "../Components"
 Item {
     anchors.fill: parent
     GridLayout {
@@ -43,19 +44,11 @@ Item {
             Layout.column: 1
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 125
-                radius: 15
-            }
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
-            }
+            DateTimeTile {}
+
+            BatteryTile {}
+
             Rectangle {
                 color: "#151515"
                 Layout.preferredWidth: 270

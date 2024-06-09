@@ -2,7 +2,7 @@
 //https://www.figma.com/design/TnfgSUpsAM6lcpu1r5iuXm/Electric-Car-Console-UI-Design?node-id=1-2&t=hpdQh6sCITeI619F-0
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
+#include <QIcon>
 int main(int argc, char *argv[])
 {
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName("Raemon");
 
     QGuiApplication app(argc, argv);
+    app.setWindowIcon(QIcon("qrc:/assets/techcoderhub_logo.jpg"));
     const QUrl style(QStringLiteral("qrc:/Style.qml"));
     qmlRegisterSingletonType(style, "Style", 1, 0, "Style");
 
