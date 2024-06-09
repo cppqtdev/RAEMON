@@ -4,11 +4,11 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 ApplicationWindow {
-    width: 995
-    height: 705
+    width: 1133
+    height: 744
     visible: true
     title: qsTr("Raemon")
-    color: "#151515"
+    color: "#000000"
 
     Loader {
         id: splashScreenLoader

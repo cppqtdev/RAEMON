@@ -1,3 +1,5 @@
+//https://www.figma.com/design/Ytk3WPtb3oO9QNKm0IwoXV/Steely-Wheels---tvOS-App-(Community)?node-id=22-190&t=8zStTzYABNmcMAeO-0
+//https://www.figma.com/design/TnfgSUpsAM6lcpu1r5iuXm/Electric-Car-Console-UI-Design?node-id=1-2&t=hpdQh6sCITeI619F-0
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 
