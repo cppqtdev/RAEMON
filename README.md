@@ -6,9 +6,26 @@
 ![Music](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/music.png)
 
 # RAEMON UI SCREENS : 
-![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/EV%20UI%20-%20Splash%20Screen%20(Loading).png)
-![Home Screen](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/home-implemented.png)
-![Music Screen](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/music-implemented.png)
-![Climate Control](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/climateControl.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/0.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/1.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/2.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/3.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/4.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/5.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/6.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/7.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/8.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/9.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/10.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/11.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/12.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/13.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/14.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/15.png)
+![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/16.png)
+
+
+
+
 ## Figma URL
 ![Figma URL](https://www.figma.com/design/TnfgSUpsAM6lcpu1r5iuXm/Electric-Car-Console-UI-Design?node-id=108-1203&t=hpdQh6sCITeI619F-0)
