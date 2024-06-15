@@ -1,9 +1,9 @@
 # Raemon Layout Concept: 
-![Home](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/home.png)
-![Car](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/car.png)
-![Navigation](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/navigation.png)
-![Thermo](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/thermo.png)
-![Music](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/music.png)
+![Home](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/layout-1.png)
+![Car](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/layout-2.png)
+![Navigation](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/layout-3.png)
+![Thermo](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/layout-4.png)
+![Music](https://github.com/cppqtdev/RAEMON/blob/main/layout-screenshots/layout-5.png)
 
 # RAEMON UI SCREENS : 
 ![UI](https://github.com/cppqtdev/RAEMON/blob/main/screenshots/0.png)
