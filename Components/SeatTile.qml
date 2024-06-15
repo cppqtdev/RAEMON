@@ -10,18 +10,26 @@ Rectangle {
     property real temperature: 70
     property bool heatSeatChecked: false
     property bool fanSeatChecked: false
+
+    property bool celsius : true
+
     color: "#151515"
     Layout.preferredWidth: 270
     Layout.preferredHeight: 270
     radius: 15
 
+    function fahrenheitToCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5 / 9).toFixed(2);
+    }
+
     ColumnLayout {
         anchors.centerIn: parent
         spacing: 30
+
         Text {
             Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
-            Layout.leftMargin: 5
             text: root.title
+            Layout.leftMargin: 20
             font.pixelSize: 20
             font.weight: Font.Bold
             font.family: "Lato"
@@ -31,27 +39,38 @@ Rectangle {
         RowLayout {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             spacing: 20
+
             PrefsButton {
+                Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
                 backgroundColor: "#00000000"
                 iconColor: "#00A3FF"
                 setIcon: "qrc:/assets/icons/Back Arrow.svg"
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked: {
+                    temperature = temperature - 1
+                }
             }
 
-            Text {
+            Item {
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                text: qsTr("%0 °F").arg(temperature)
-                font.pixelSize: 48
-                font.weight: Font.Bold
-                font.family: "Lato"
-                color: "#FFFFFF"
+                Layout.preferredWidth: root.width * 0.5
+                Text {
+                    anchors.centerIn: parent
+                    text: qsTr("%0 °%1").arg(celsius ? fahrenheitToCelsius(temperature) : temperature).arg(celsius ? "C" : "F")
+                    font.pixelSize: 28
+                    font.weight: Font.Bold
+                    font.family: "Lato"
+                    color: "#FFFFFF"
+                }
             }
 
             PrefsButton {
                 backgroundColor: "#00000000"
                 iconColor: "#FF0000"
                 setIcon: "qrc:/assets/icons/Front Arrow.svg"
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                Layout.alignment: Qt.AlignRight | Qt.AlignVCenter
+                onClicked: {
+                    temperature = temperature + 1
+                }
             }
         }
 

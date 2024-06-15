@@ -4,9 +4,12 @@ import QtQuick.Controls.Basic
 import Style 1.0
 import "../controls"
 Rectangle {
+    id: root
     color: "#151515"
     Layout.preferredWidth: 270
     Layout.preferredHeight: 270
+    property int volumeValue: 25
+    property alias mediaControlSelected: swipView.currentIndex
     radius: 15
 
     ColumnLayout {
@@ -23,15 +26,23 @@ Rectangle {
 
         RowLayout {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-            spacing: 30
+            spacing: 20
             PrefsButton {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Back Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked:  {
+                    if(volumeValue !== 0) {
+                        volumeValue = volumeValue - 1
+                    }
+                }
             }
 
             RowLayout {
+                spacing: 10
+                Layout.preferredWidth: root.width * 0.4
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                Item {Layout.fillWidth: true}
                 Image {
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
                     source: "qrc:/assets/icons/Volume Icon.svg"
@@ -39,17 +50,22 @@ Rectangle {
 
                 Text {
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                    text: qsTr("25")
+                    text: qsTr("%0").arg(volumeValue)
                     font.pixelSize: 20
                     font.weight: Font.Bold
                     font.family: "Lato"
                     color: "#FFFFFF"
                 }
+                Item {Layout.fillWidth: true}
             }
+
             PrefsButton {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Front Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked:  {
+                    volumeValue = volumeValue + 1
+                }
             }
         }
 
@@ -64,55 +80,104 @@ Rectangle {
         RowLayout {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
             spacing: 20
+            Layout.leftMargin: 8
             PrefsButton {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Back Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked:  {
+                    if(swipView.currentIndex !== 0){
+                        swipView.currentIndex = swipView.currentIndex - 1
+                    }
+                }
             }
 
-            Text {
+            SwipeView {
+                id: swipView
+                clip: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                text: qsTr("CarPlay")
-                font.pixelSize: 20
-                font.weight: Font.Bold
-                font.family: "Lato"
-                color: "#FFFFFF"
+                currentIndex: 0
+                Layout.preferredWidth: root.width * 0.4
+                Layout.preferredHeight: 50
+
+                Item{
+                    clip: true
+                    Text {
+                        clip: true
+                        anchors.centerIn: parent
+                        text: qsTr("Car Play")
+                        font.pixelSize: 20
+                        font.weight: Font.Bold
+                        font.family: "Lato"
+                        color: "#FFFFFF"
+                    }
+                }
+
+                Item{
+                    clip: true
+                    Text {
+                        clip: true
+                        anchors.centerIn: parent
+                        text: qsTr("Radio")
+                        font.pixelSize: 20
+                        font.weight: Font.Bold
+                        font.family: "Lato"
+                        color: "#FFFFFF"
+                    }
+                }
+
+                Item{
+                    clip: true
+                    Text {
+                        clip: true
+                        anchors.centerIn: parent
+                        text: qsTr("Spotify")
+                        font.pixelSize: 20
+                        font.weight: Font.Bold
+                        font.family: "Lato"
+                        color: "#FFFFFF"
+                    }
+                }
             }
 
             PrefsButton {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Front Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked: {
+                    if(swipView.currentIndex !== 2){
+                        swipView.currentIndex = swipView.currentIndex + 1
+                    }
+                }
             }
         }
 
-        RowLayout {
+        Loader {
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-            spacing: 20
-            Image {
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                source: "qrc:/assets/icons/Bluetooth Icon.svg"
-            }
-
-            ColumnLayout {
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                Text {
-                    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
-                    text: qsTr("Bluetooth Connected:")
-                    font.pixelSize: 14
-                    font.weight: Font.Light
-                    font.family: "Lato"
-                    color: "#FFFFFF"
-                }
-                Text {
-                    Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
-                    text: qsTr("Raymond’s iPhone")
-                    font.pixelSize: 14
-                    font.weight: Font.Bold
-                    font.family: "Lato"
-                    color: "#FFFFFF"
+            sourceComponent:  {
+                if(swipView.currentIndex == 0) {
+                    return connectedDevice
+                }else if(swipView.currentIndex == 1){
+                    return fmStationConnected
+                } else {
+                    return spotifyClient
                 }
             }
         }
+    }
+
+    Component {
+        id: connectedDevice
+        ConnectedMobileDevice {}
+    }
+
+    Component {
+        id: fmStationConnected
+        ConnectedFMStation {}
+    }
+
+    Component {
+        id: spotifyClient
+        ConnectedSpotifyClient {}
     }
 }

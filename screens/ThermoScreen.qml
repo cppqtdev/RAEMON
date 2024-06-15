@@ -24,13 +24,16 @@ Item {
             Layout.columnSpan: 1
             Layout.rowSpan: 1
 
-            WeatherTile {}
+            WeatherTile {
+                id: weatherTile
+            }
 
             SeatTile {
                 title: qsTr("Driver’s Seat")
                 temperature: 70
                 heatSeatChecked: false
                 fanSeatChecked: true
+                celsius: weatherTile.celsius
             }
         }
 
@@ -48,6 +51,7 @@ Item {
                 temperature: 68
                 heatSeatChecked: true
                 fanSeatChecked: false
+                celsius: weatherTile.celsius
             }
         }
         ColumnLayout {
@@ -66,6 +70,7 @@ Item {
                 temperature: 73
                 heatSeatChecked: true
                 fanSeatChecked: true
+                celsius: weatherTile.celsius
             }
         }
     }

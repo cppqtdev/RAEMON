@@ -65,5 +65,73 @@
         <file>Components/WeatherTile.qml</file>
         <file>Components/AirControlTile.qml</file>
         <file>Components/KeyBoardTile.qml</file>
+        <file>assets/carIcons/BackSeat.png</file>
+        <file>assets/carIcons/BackStorage.png</file>
+        <file>assets/carIcons/DriverSeat.png</file>
+        <file>assets/carIcons/DriverSideSeat.png</file>
+        <file>assets/carIcons/frontEngine.png</file>
+        <file>assets/carIcons/HighlightLeftTopTire.png</file>
+        <file>assets/carIcons/LeftSideMirror.png</file>
+        <file>assets/carIcons/lefttiretopandSeatSlectedpng.png</file>
+        <file>assets/carIcons/leftTopTire.png</file>
+        <file>assets/carIcons/lowerLeftire.png</file>
+        <file>assets/carIcons/lowerRightTire.png</file>
+        <file>assets/carIcons/RightSideMirror.png</file>
+        <file>assets/carIcons/righttopTire.png</file>
+        <file>Components/YourVehicalTile.qml</file>
+        <file>Components/VehicleSkeletonTile.qml</file>
+        <file>assets/carIcons/vehical.png</file>
+        <file>controls/PulseButton.qml</file>
+        <file>assets/icons/Eco Leaf Icon 2.svg</file>
+        <file>assets/icons/lock.svg</file>
+        <file>assets/icons/Power Icon.svg</file>
+        <file>assets/icons/Warning.svg</file>
+        <file>Components/LockandWarning.qml</file>
+        <file>Components/PowerControls.qml</file>
+        <file>assets/icons/Sport Flag Icon.svg</file>
+        <file>assets/icons/BatteryIcon_sports.svg</file>
+        <file>assets/icons/BatteryIcon_normal.svg</file>
+        <file>assets/icons/Sport Flag Icon_battery.svg</file>
+        <file>assets/icons/Double Arrows.svg</file>
+        <file>assets/icons/double-arrow.svg</file>
+        <file>assets/icons/Seat B&amp;F.svg</file>
+        <file>assets/icons/Seat Recline.svg</file>
+        <file>assets/icons/Straight Arrow.svg</file>
+        <file>assets/icons/Warningicon.svg</file>
+        <file>Components/SettingsControlBasePage.qml</file>
+        <file>Components/SettingsControlHomePage.qml</file>
+        <file>assets/icons/left-arrow.svg</file>
+        <file>Components/SettingsControl.qml</file>
+        <file>Components/SettingsControlTirePressure.qml</file>
+        <file>Components/SettingsControlSeatAdjustment.qml</file>
+        <file>Components/SettingsControlMirrorAdjustment.qml</file>
+        <file>Components/TirePressureInfo.qml</file>
+        <file>assets/icons/Erroricon.svg</file>
+        <file>Components/SettingsControlBackStorage.qml</file>
+        <file>Components/SettingsControlEngine.qml</file>
+        <file>assets/seatIcons/mdi--car-child-seat.svg</file>
+        <file>assets/seatIcons/mdi--car-seat-cooler.svg</file>
+        <file>assets/seatIcons/mdi--car-seat-heater.svg</file>
+        <file>assets/seatIcons/mdi--car-seat.svg</file>
+        <file>assets/seatIcons/mdi--seat-flat-angled.svg</file>
+        <file>assets/seatIcons/mdi--seat-individual-suite.svg</file>
+        <file>assets/seatIcons/mdi--seat-legroom-extra.svg</file>
+        <file>assets/seatIcons/mdi--seat-legroom-normal.svg</file>
+        <file>assets/seatIcons/mdi--seat-passenger.svg</file>
+        <file>assets/seatIcons/mdi--seat-recline-extra(1).svg</file>
+        <file>assets/seatIcons/mdi--seat-recline-extra.svg</file>
+        <file>assets/seatIcons/mdi--seatbelt.svg</file>
+        <file>Components/SeatIcon.qml</file>
+        <file>assets/icons/Backup Camera Picture.png</file>
+        <file>assets/icons/Map Picture.png</file>
+        <file>Components/MapTile.qml</file>
+        <file>assets/icons/Home-icon-Add.svg</file>
+        <file>assets/icons/Plus-icon-add.svg</file>
+        <file>assets/icons/Work-icon-add.svg</file>
+        <file>Components/ConnectedMobileDevice.qml</file>
+        <file>Components/ConnectedFMStation.qml</file>
+        <file>assets/icons/FMStation.svg</file>
+        <file>Components/ConnectedSpotifyClient.qml</file>
+        <file>assets/icons/Wifi-icon.svg</file>
     </qresource>
 </RCC>

@@ -8,8 +8,11 @@ Rectangle {
     color: "#151515"
     property bool acOn: false
     property bool airWindow: false
+
     Layout.preferredWidth: 270
     Layout.preferredHeight: 415
+
+    property int fanSpeed: 12
     radius: 15
     ColumnLayout {
         width: parent.width * 0.9
@@ -72,6 +75,9 @@ Rectangle {
                     checkable: true
                     checked: !airWindow
                     iconColor: checked ? "#FFFFFF" : "#808080"
+                    onClicked:  {
+                        airWindow = !airWindow
+                    }
                 }
 
                 Rectangle {
@@ -93,6 +99,9 @@ Rectangle {
                     checkable: true
                     checked: airWindow
                     iconColor: checked ? "#FFFFFF" : "#808080"
+                    onClicked:  {
+                        airWindow = !airWindow
+                    }
                 }
                 Rectangle {
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
@@ -144,6 +153,12 @@ Rectangle {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Back Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+
+                onClicked: {
+                    if(fanSpeed !== 0) {
+                        fanSpeed = fanSpeed - 1
+                    }
+                }
             }
 
             RowLayout {
@@ -155,7 +170,7 @@ Rectangle {
 
                 Text {
                     Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-                    text: qsTr("12")
+                    text: qsTr("%0").arg(fanSpeed)
                     font.pixelSize: 24
                     font.weight: Font.Bold
                     font.family: "Lato"
@@ -167,6 +182,9 @@ Rectangle {
                 backgroundColor: "#00000000"
                 setIcon: "qrc:/assets/icons/Front Arrow.svg"
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                onClicked: {
+                    fanSpeed = fanSpeed + 1
+                }
             }
         }
     }

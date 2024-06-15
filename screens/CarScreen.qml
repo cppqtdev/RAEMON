@@ -4,7 +4,9 @@ import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects
 import "../Components"
 Item {
+    id: root
     anchors.fill: parent
+    signal powerOff()
     GridLayout {
         id: grid
         anchors.fill: parent
@@ -23,19 +25,13 @@ Item {
             Layout.column: 0
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 560
-                radius: 15
+
+            YourVehicalTile {
+                onComponentSelected: (index)=> { settingsControl.switchPage(index) }
             }
 
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 125
-                radius: 15
-            }
+            LockandWarning {}
+
         }
         ColumnLayout {
             spacing: 20
@@ -43,17 +39,16 @@ Item {
             Layout.column: 1
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 415
-                radius: 15
+
+            SettingsControl {
+                id: settingsControl
             }
-            Rectangle {
-                color: "#151515"
-                Layout.preferredWidth: 270
-                Layout.preferredHeight: 270
-                radius: 15
+
+            PowerControls {
+                onModeChanged: (index)=> {
+                    batteryTile.vehicalMode = index
+                }
+                onPowerOff: root.powerOff()
             }
         }
         ColumnLayout {
@@ -65,7 +60,9 @@ Item {
 
             DateTimeTile {}
 
-            BatteryTile {}
+            BatteryTile {
+                id: batteryTile
+            }
 
             NotificationTile {}
         }

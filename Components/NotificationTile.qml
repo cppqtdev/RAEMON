@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls.Basic
 import Style 1.0
+import "../controls"
 
 Rectangle {
     color: "#151515"
@@ -39,9 +40,11 @@ Rectangle {
                     color: "#FFB800"
                 }
 
-                Image {
+                PrefsButton {
+                    backgroundColor: "#00000000"
+                    iconColor: "#FFB800"
                     Layout.alignment: Qt.AlignLeft | Qt.AlignVCenter
-                    source: "qrc:/assets/icons/Tire Pressure Icon.svg"
+                    setIcon: "qrc:/assets/icons/Tire Pressure Icon.svg"
                 }
             }
 

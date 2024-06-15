@@ -2,7 +2,9 @@ import QtQuick
 import QtQuick.Controls.Basic
 import QtQuick.Layouts
 import Qt5Compat.GraphicalEffects
+import QtQuick.VirtualKeyboard 2.15
 import "../Components"
+
 Item {
     anchors.fill: parent
     GridLayout {
@@ -23,14 +25,16 @@ Item {
             Layout.column: 0
             Layout.columnSpan: 1
             Layout.rowSpan: 1
-            Rectangle {
-                color: "#151515"
+
+            MapTile {
+                id: mapTile
                 Layout.preferredWidth: 560
-                Layout.preferredHeight: 415
-                radius: 15
+                Layout.fillHeight: true
             }
 
-            KeyBoardTile {}
+            KeyBoardTile {
+                id: keyBoardTile
+            }
         }
 
         ColumnLayout {

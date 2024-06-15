@@ -40,7 +40,9 @@ ApplicationWindow {
     Component {
         id: mainScreenPage
         MainPage {
-            //splashTimerOff.start()
+            onPowerOff: {
+                splashTimerOff.start()
+            }
         }
     }
 
@@ -75,7 +77,7 @@ ApplicationWindow {
         id: splashTimerOff
         running: false
         repeat: false
-        interval: 500
+        interval: 1000
         onTriggered: {
             powerOffAnimation.start()
             showSplashOff.start()

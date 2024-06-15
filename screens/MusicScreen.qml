@@ -24,9 +24,13 @@ Item {
             Layout.columnSpan: 1
             Layout.rowSpan: 1
 
-            LargeTileMusic {}
+            LargeTileMusic {
+                musicStationConnected: mediaControl.mediaControlSelected
+            }
 
-            MusicListTile {}
+            MusicListTile {
+                musicStationConnected: mediaControl.mediaControlSelected
+            }
         }
 
         ColumnLayout {
@@ -40,7 +44,9 @@ Item {
 
             BatteryTile {}
 
-            MediaControlFile {}
+            MediaControlFile {
+                id: mediaControl
+            }
         }
     }
 }

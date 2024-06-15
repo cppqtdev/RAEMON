@@ -7,6 +7,7 @@ import "screens"
 Item {
     id: root
     anchors.fill: parent
+    signal powerOff()
     RowLayout {
         anchors.fill: parent
         spacing: 0
@@ -73,7 +74,9 @@ Item {
     }
     Component {
         id: carScreen
-        CarScreen {}
+        CarScreen {
+            onPowerOff: root.powerOff()
+        }
     }
     Component {
         id: navigationScreen
